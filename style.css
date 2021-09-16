@@ -1,7 +1,31 @@
+body {
+    margin: 0px;
+    font-family: CeraPro-Regular, Helvetica, sans-serif;
+    font-size: 16px;
+    background: rgb(248, 247, 245);
+    min-height: 100%;
+    position: relative;
+    -webkit-tap-highlight-color: transparent;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
 .site-nav{
 
-    color: green;
+    position: relative;
+    height: auto;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    background: rgb(209, 224, 215);
+    padding: 2rem;
+    z-index: 40;
+    overflow: hidden;
+    word-break: break-word;
 
+}
+
+.header1{
+    color: rgb(0, 78, 66);
+    margin: 0px;
 }
 
 .info{
@@ -9,20 +33,85 @@
 }
 
 .header-text {
-    color: green;
+    color: rgb(0, 78, 66);
+    margin: 0px;
     text-align: center;
 }
 
 .wrapper{
-    height: 10vh;
-    width: 70vw;
-    min-width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: auto;
-    
+
+    padding-top: 0px;
+    padding-bottom: 0px;
+    z-index: 30;
+    width: auto;
+    animation-duration: 250ms;
 }
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+article {
+    display: block;
+}
+
+@media (max-width: 10000px) {
+
+.box {
+    display: flex;
+    justify-content:space-evenly;
+  
+}
+}
+
+
+button, input, optgroup, select, textarea {
+    font-family: CeraPro-Bold, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0px;
+}
+
+.kategori{
+
+
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+    padding: 8px 25px;
+    border-left: 0px solid rgb(234, 234, 234);
+    border-top: 1px solid rgb(234, 234, 234);
+    border-right: 0px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+
+}
+.filtrera{
+
+
+
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+    padding: 8px 20px;
+    border-left: 0px solid rgb(234, 234, 234);
+    border-top: 1px solid rgb(234, 234, 234);
+    border-right: 0px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+
+}
+
+.sortera{
+
+    display: flex;
+
+    background-color: rgb(255, 255, 255);
+    padding: 8px 20px;
+    border-left: 0px solid rgb(234, 234, 234);
+    border-top: 1px solid rgb(234, 234, 234);
+    border-right: 0px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+
+}
+
 
 a {
     color: inherit;
@@ -49,9 +138,24 @@ a {
     margin: auto;
 }
 
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
 .pic {
-    height: auto;
-    min-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
