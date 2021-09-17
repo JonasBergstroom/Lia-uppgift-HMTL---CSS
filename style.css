@@ -12,6 +12,13 @@
 
 }
 
+html {
+    line-height: 1.15;
+    text-size-adjust: 100%;
+    box-sizing: border-box;
+    background-color: rgb(248, 247, 245);
+}
+
 .header{
 
 
@@ -22,8 +29,8 @@
     -webkit-box-pack: center;
     justify-content: center;
     width: 100%;
-    height: 32px;
-    padding: 0px 2rem;
+    height: 40px;
+    padding: 20px 2rem;
     color: rgb(255, 255, 255);
     background: rgb(0, 78, 66);
     position: relative;
@@ -32,6 +39,136 @@
 
 
 }
+
+
+.sidemenu-btn{
+
+    display: block;
+    height: 24px;
+    padding: 0px;
+    line-height: 1;
+    cursor: pointer;
+    position: relative;
+    width: 550px;
+    opacity: 1;
+    appearance: none;
+    border: 0px none;
+    background: transparent;
+    pointer-events: initial;
+
+}
+
+.sidemenu{
+    position: relative;
+    height: 18px;
+    width: 20px;
+}
+
+.line1 {
+
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    border-radius: 2px;
+    left: 0px;
+    background: rgb(255, 255, 255);
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0s, width 200ms ease 0s, opacity 200ms ease 0s, left 200ms ease 0s;
+    top: 1px;
+    transform-origin: left top;
+
+}
+
+.line2 {
+
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    border-radius: 2px;
+    left: 0px;
+    background: rgb(255, 255, 255);
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0s, width 200ms ease 0s, opacity 200ms ease 0s, left 200ms ease 0s;
+    top: 8px;
+    transform-origin: center center;
+}
+
+.line3 {
+
+    display: block;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    border-radius: 2px;
+    left: 0px;
+    background: rgb(255, 255, 255);
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1) 0s, width 200ms ease 0s, opacity 200ms ease 0s, left 200ms ease 0s;
+    top: 15px;
+    transform-origin: left bottom;
+
+
+}
+
+.seachbar-box {
+
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    height: 32px;
+    padding: 0px;
+    line-height: inherit;
+    margin: 1px 1rem;
+    transition: margin 250ms ease 0s;
+    position: relative;
+    right: 0px;
+    left: 25px;
+}
+
+@media (max-width: 768px) {
+.seachbar-box .searchbox  {
+    background: rgb(0, 78, 66);
+    border-color: transparent;
+    font-size: 1rem;
+    padding: 4px 40px;
+    width: 100%;
+    text-indent: 4px;
+    transition: padding 250ms ease-in-out 0s;
+    height: 32px;
+    line-height: 32px;
+}
+}
+
+@media (max-width: 960px) {
+
+.searchbox {
+    width: 190px;
+    height: 36px;
+    line-height: 36px;
+}
+}
+
+.seachbar {
+    width: 13rem;
+    background-color: rgb(248, 247, 245);
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 20px;
+    font-family: CeraPro-Regular, Helvetica, sans-serif;
+    font-size: 19px;
+    color: rgb(0, 0, 0);
+    padding: 10px 14px;
+    transition: width 0.4s ease-in-out 0s;
+    appearance: none;
+    margin: 0px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.cart-symbol{
+    border: 0px none;
+    background: transparent;
+
+
+}
+
 
 .header2{
 
@@ -53,6 +190,20 @@
 
 }
 
+.header2-pic {
+    height: 90px;
+    width: 90px;
+    display: block;
+    content: "";
+    flex-shrink: 0;
+    -webkit-box-flex: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+}
+
 .site-nav{
 
     position: relative;
@@ -64,6 +215,11 @@
     z-index: 40;
     overflow: hidden;
     word-break: break-word;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    
 
 
 
@@ -91,6 +247,7 @@
     z-index: 30;
     width: auto;
     animation-duration: 250ms;
+
 }
 *, ::before, ::after {
     box-sizing: inherit;
@@ -100,29 +257,39 @@ article {
     display: block;
 }
 
+@media (max-width: 960px) {
+.box {
+    position: relative;
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px;
+    border-top: 1px solid rgb(234, 234, 234);
+    border-right: 1px solid rgb(234, 234, 234);
+    border-bottom: 1px solid rgb(234, 234, 234);
+    border-image: initial;
+    border-left: none;
+    margin: 0px;
+}
+}
+
 @media (max-width: 10000px) {
 
 .box {
     display: flex;
     justify-content:space-evenly;
-  
-}
+   
+ }
 }
 
-
-button, input, optgroup, select, textarea {
-    font-family: CeraPro-Bold, Helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.15;
-    margin: 0px;
-}
 
 .kategori{
 
 
     display: flex;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
     padding: 8px 25px;
     border-left: 0px solid rgb(234, 234, 234);
     border-top: 1px solid rgb(234, 234, 234);
@@ -136,7 +303,7 @@ button, input, optgroup, select, textarea {
 
     display: flex;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
     padding: 8px 20px;
     border-left: 0px solid rgb(234, 234, 234);
     border-top: 1px solid rgb(234, 234, 234);
@@ -149,7 +316,7 @@ button, input, optgroup, select, textarea {
 
     display: flex;
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(253, 253, 253);
     padding: 8px 20px;
     border-left: 0px solid rgb(234, 234, 234);
     border-top: 1px solid rgb(234, 234, 234);
@@ -196,13 +363,10 @@ ul {
 
 .header-pic{
 
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    -webkit-box-pack: start;
-    justify-content: flex-start;
-    margin: 0px;
-    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 
 .pic {
