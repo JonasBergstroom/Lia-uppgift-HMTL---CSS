@@ -61,7 +61,7 @@ html {
 .sidemenu{
     position: relative;
     height: 18px;
-    width: 20px;
+    width: 5px;
 }
 
 .line1 {
@@ -330,6 +330,32 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.container{
+    display: flex; 
+}
+
+.products{
+    background: white;
+    width: 220px;
+    height: 225px;
+    margin: 10px;
+}
+
+.card-image{
+    background-color: thistle;
+    height: 123px;
+    width: 150;
+    margin-bottom: 15px;
+    background-size: cover;
+
+}
+
+
+.card-1 {
+    background-image: url('./assets/bild1.jpeg');
+}
+
 
 .tillskott{
     height: 100%;
