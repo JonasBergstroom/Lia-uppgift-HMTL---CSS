@@ -365,6 +365,31 @@ a {
 
 }
 
+.product-text{
+
+    text-align: center;
+}
+
+.buy{
+
+    height: 40px;
+    line-height: 32px;
+    border-radius: 22px;
+    display: inline-block;
+    width: 100%;
+    padding: 0px;
+    background: rgb(64, 63, 63);
+    border: none;
+    font-family: CeraPro-Medium, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    transition: all 200ms ease 0s;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
 
 .card-1 {
     background-image: url('./assets/bild1.jpeg');
